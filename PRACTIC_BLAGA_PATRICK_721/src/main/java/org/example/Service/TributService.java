@@ -18,8 +18,10 @@ public class TributService {
     }
     public List<Tribut> filterTributByDistriktAndStatus(int distrikt){
         List<Tribut>data = tributRepo.readAllTribut();
-       return data.stream().filter(e -> e.getDistrikt()==distrikt).toList()
-        .stream().filter(e -> e.getStatus()== Status.ALIVE).toList();
+       return data.stream().filter(e -> e.getDistrict()==distrikt && e.getStatus().equals(Status.ALIVE)).toList();
+
+    }
+    public List<Tribut> sortBySkillLevel(int skillLevel){
 
     }
 }

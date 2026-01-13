@@ -11,6 +11,6 @@ public class EreignisController {
     }
 
     public void showAllEreignis(){
-        System.out.println(ereignisService.listAllEreignis());
+        System.out.println(ereignisService.listAllEreignis().toString());
     }
 }

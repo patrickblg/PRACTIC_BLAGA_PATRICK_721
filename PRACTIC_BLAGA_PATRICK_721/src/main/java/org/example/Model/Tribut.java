@@ -7,8 +7,7 @@ import java.util.List;
 public class Tribut {
     private int id;
     private String name;
-    private int distrikt;
-    @JsonProperty("status")
+    private int district;
     private Status status;
     private int skillLevel;
 
@@ -17,7 +16,7 @@ public class Tribut {
     public Tribut(int id, String name, int distrikt, Status status, int skillLevel) {
         this.id = id;
         this.name = name;
-        this.distrikt = distrikt;
+        this.district = distrikt;
         this.status = status;
         this.skillLevel = skillLevel;
     }
@@ -38,12 +37,12 @@ public class Tribut {
         this.name = name;
     }
 
-    public int getDistrikt() {
-        return distrikt;
+    public int getDistrict() {
+        return district;
     }
 
-    public void setDistrikt(int distrikt) {
-        this.distrikt = distrikt;
+    public void setDistrict(int district) {
+        this.district = district;
     }
 
     public Status getStatus() {
@@ -67,7 +66,7 @@ public class Tribut {
         return "Tribut{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", distrikt=" + distrikt +
+                ", distrikt=" + district +
                 ", status=" + status +
                 ", skillLevel=" + skillLevel +
                 '}';

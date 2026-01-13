@@ -10,6 +10,8 @@ import org.example.Service.EreignisService;
 import org.example.Service.SponsorGeschenkService;
 import org.example.Service.TributService;
 
+import java.util.Scanner;
+
 public class Main {
     static void main() {
 
@@ -33,6 +35,9 @@ public class Main {
         giftController.showAllSponsorGeschenk();
         tributController.showAllTribut();
 
-        tributController.showFilteredTributByDistriktAndStatus(2);
+        Scanner scanner = new Scanner(System.in);
+        int s1 = scanner.nextInt();
+
+        tributController.showFilteredTributByDistriktAndStatus(s1);
     }
 }

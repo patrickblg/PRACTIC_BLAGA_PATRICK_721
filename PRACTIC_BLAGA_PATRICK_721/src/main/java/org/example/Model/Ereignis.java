@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Ereignis {
     private int id;
     private int tributId;
-    @JsonProperty("type")
     private EventType eventType;
     private int points;
     private int day;
