@@ -21,4 +21,9 @@ public class TributRepo {
         return list = new ArrayList<>(Arrays.asList(mapper.readValue(new File(filename), Tribut[].class)));
     }
 
+    public void persist(List<Tribut> list){
+        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("PRACTIC_BLAGA_PATRICK_721/src/main/resources/output.json"),list);
+    }
+
+
 }

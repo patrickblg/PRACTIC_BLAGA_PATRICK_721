@@ -39,5 +39,8 @@ public class Main {
         int s1 = scanner.nextInt();
 
         tributController.showFilteredTributByDistriktAndStatus(s1);
+        tributController.sortBySkillLevel();
+        tributController.addTributs(tributService.sortBySkillLevel());
+
     }
 }
